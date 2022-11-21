@@ -1,16 +1,27 @@
 public class Student {
     private String name;
     private String classBlock;
-    private int dailyBehaviorScore;
-    private int date;
+    private int mondayScore;
+    private int tuesdayScore;
+    private int wednesdayScore;
+    private int thursdayScore;
+    private int fridayScore;
+    private String date;
     private int weeklyAverage;
 
-    public Student(String name, String classBlock, int dailyBehaviorScore, int date) {
+    public Student(String name, String classBlock, int mondayScore, int tuesdayScore, int wednesdayScore, int thursdayScore, int fridayScore, String date, int weeklyAverage) {
         this.name = name;
         this.classBlock = classBlock;
-        this.dailyBehaviorScore = dailyBehaviorScore;
+        this.mondayScore = mondayScore;
+        this.tuesdayScore = tuesdayScore;
+        this.wednesdayScore = wednesdayScore;
+        this.thursdayScore = thursdayScore;
+        this.fridayScore = fridayScore;
         this.date = date;
+        this.weeklyAverage = weeklyAverage;
+    }
 
+    public Student(String name, String classBlock, int dailyBehaviorScore, String date) {
     }
 
     public String getName() {
@@ -29,19 +40,51 @@ public class Student {
         this.classBlock = classBlock;
     }
 
-    public int getDailyBehaviorScore() {
-        return dailyBehaviorScore;
+    public int getMondayScore() {
+        return mondayScore;
     }
 
-    public void setDailyBehaviorScore(int dailyBehaviorScore) {
-        this.dailyBehaviorScore = dailyBehaviorScore;
+    public void setMondayScore(int mondayScore) {
+        this.mondayScore = mondayScore;
     }
 
-    public int getDate() {
+    public int getTuesdayScore() {
+        return tuesdayScore;
+    }
+
+    public void setTuesdayScore(int tuesdayScore) {
+        this.tuesdayScore = tuesdayScore;
+    }
+
+    public int getWednesdayScore() {
+        return wednesdayScore;
+    }
+
+    public void setWednesdayScore(int wednesdayScore) {
+        this.wednesdayScore = wednesdayScore;
+    }
+
+    public int getThursdayScore() {
+        return thursdayScore;
+    }
+
+    public void setThursdayScore(int thursdayScore) {
+        this.thursdayScore = thursdayScore;
+    }
+
+    public int getFridayScore() {
+        return fridayScore;
+    }
+
+    public void setFridayScore(int fridayScore) {
+        this.fridayScore = fridayScore;
+    }
+
+    public String getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -58,11 +101,16 @@ public class Student {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", classBlock='" + classBlock + '\'' +
-                ", dailyBehaviorScore=" + dailyBehaviorScore +
-                ", date=" + date +
+                ", mondayScore=" + mondayScore +
+                ", tuesdayScore=" + tuesdayScore +
+                ", wednesdayScore=" + wednesdayScore +
+                ", thursdayScore=" + thursdayScore +
+                ", fridayScore=" + fridayScore +
+                ", date='" + date + '\'' +
+                ", weeklyAverage=" + weeklyAverage +
                 '}';
-
     }
-
-
 }
+
+
+
